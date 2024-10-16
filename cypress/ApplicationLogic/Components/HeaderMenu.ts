@@ -9,16 +9,16 @@ export class HeaderMenu extends BasePage {
 
     get Buttons () {
         return {
-            HilfeUndKontakt: cy.get('[data-attr-value="Hilfe & Kontakt"]'),
-            Karriere: cy.get('[data-attr-value="Karriere"]'),
-            UnternemensGruppe: cy.get('[data-attr-value="Unternehmensgruppe"]'),
-            HinweisgeberSystem: cy.get('[data-attr-value="Unternehmensgruppe"]'),
-            Angebote: cy.get('[data-attr-value="Angebote"]'),
-            AldiOnlineshop: cy.get('[data-attr-value="ALDI ONLINESHOP"]'),
-            Prospekte: cy.get('[data-attr-value="Prospekte"]'),
-            Produkte: cy.get('[data-attr-value="Produkte"]'),
-            Rezepte: cy.get('[data-attr-value="Rezepte"]'),
-            ThemenWelten: cy.get('[data-attr-value="Themenwelten"]')
+            HilfeUndKontakt: this.Containers.MainContainer.get('[data-attr-value="Hilfe & Kontakt"]'),
+            Karriere: this.Containers.MainContainer.get('[data-attr-value="Karriere"]'),
+            UnternemensGruppe: this.Containers.MainContainerм.get('[data-attr-value="Unternehmensgruppe"]'),
+            HinweisgeberSystem: this.Containers.MainContainer.get('[data-attr-value="Unternehmensgruppe"]'),
+            Angebote: this.Containers.MainContainer.get('[data-attr-value="Angebote"]'),
+            AldiOnlineshop: this.Containers.MainContainer.get('[data-attr-value="ALDI ONLINESHOP"]'),
+            Prospekte: this.Containers.MainContainer.get('[data-attr-value="Prospekte"]'),
+            Produkte: this.Containers.MainContainer.get('[data-attr-value="Produkte"]'),
+            Rezepte: this.Containers.MainContainer.get('[data-attr-value="Rezepte"]'),
+            ThemenWelten: this.Containers.MainContainer.get('[data-attr-value="Themenwelten"]')
         };
     }
 
